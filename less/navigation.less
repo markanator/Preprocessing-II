@@ -11,7 +11,9 @@
     border-bottom: 2px dashed @silver;
 
     @media @mobile {
-        background-color: red;
+ 
+        display: flex;
+        flex-direction:column;
     }
 
 
@@ -22,6 +24,12 @@
         vertical-align: middle;
         width: 400px;
         //border: 1px solid black;
+
+        @media @mobile{
+            justify-content: center;
+            align-items: center;
+            padding: 2% 0;
+        }
     }
 
     nav{
@@ -30,7 +38,13 @@
         justify-content: end;
 
         //border: 1px solid blue;
-
+        @media @mobile {
+            margin: 0 auto;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
         a{
 
             //border: 1px solid grey;
@@ -39,6 +53,12 @@
             color: black;
             text-decoration: none;
             padding-left: 3rem;
+
+
+            @media @mobile {
+             text-align: center;
+             padding-left: 0;   
+            }
         }
     }
 
