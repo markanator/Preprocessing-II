@@ -1,1 +1,66 @@
 // Navigation Styles here
+
+.top-nav {
+
+    .DisJusAli(flex,center,center);
+
+    padding: 2% 0;
+    margin: 0 auto;
+
+    width: 100%;
+    border-bottom: 2px dashed @silver;
+
+    @media @mobile {
+ 
+        display: flex;
+        flex-direction:column;
+    }
+
+
+    .site-title{
+
+        .DisJusAli(flex,start,center);
+
+        vertical-align: middle;
+        width: 400px;
+        //border: 1px solid black;
+
+        @media @mobile{
+            justify-content: center;
+            align-items: center;
+            padding: 2% 0;
+        }
+    }
+
+    nav{
+        
+        display: flex;
+        justify-content: end;
+
+        //border: 1px solid blue;
+        @media @mobile {
+            margin: 0 auto;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        a{
+
+            //border: 1px solid grey;
+            text-align: right;
+            font-size: 2rem;
+            color: black;
+            text-decoration: none;
+            padding-left: 3rem;
+
+
+            @media @mobile {
+             text-align: center;
+             padding-left: 0;   
+            }
+        }
+    }
+
+
+}
